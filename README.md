@@ -1,8 +1,8 @@
 
-```markdown
-# Project Name
 
-Description of your project goes here. Provide a brief overview of what your project does.
+# WriteEase
+
+Figma design into a responsive HTML/CSS/JavaScript page.
 
 ## Table of Contents
 - [Demo](#demo)
