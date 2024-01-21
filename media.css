@@ -1,0 +1,173 @@
+@media only screen and (max-width: 900px) {
+
+  .main>.page1>.nav {
+
+    >img:not(:first-child),
+    .nav_btn {
+      display: none;
+    }
+
+    >i {
+      display: block;
+    }
+  }
+
+  .main .page2 .content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    >div {
+      padding-left: 6rem;
+
+      >img:nth-child(2) {
+        height: 4rem;
+        width: 15rem;
+      }
+    }
+  }
+
+  .main>.page4 {
+    >img {
+      height: 12rem;
+      width: 20rem;
+    }
+
+    >.group1>img,
+    >.group2>img {
+      left: 5rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .main>.page1>.boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >.box1 {
+      justify-content: center;
+      align-items: center;
+
+      >img:nth-child(1) {
+        height: 15rem;
+        width: 65rem;
+        margin-bottom: 2rem;
+      }
+
+      >img:nth-child(2) {
+        height: 10rem;
+        width: 60rem;
+        margin-bottom: 2rem;
+      }
+
+      >.contain {
+        align-items: center;
+
+        >.container {
+          position: relative;
+
+
+          .profile:nth-of-type(2n) {
+            display: none;
+          }
+
+          .profile:nth-child(1) {
+            position: absolute;
+            top: -8.5rem;
+            left: 16rem;
+          }
+
+          .profile:nth-child(3) {
+            position: absolute;
+            top: -8.5rem;
+            left: -11rem;
+          }
+
+
+        }
+      }
+    }
+
+    >.box2 {
+      .chat {
+        height: auto;
+        width: 40rem;
+      }
+    }
+
+
+  }
+
+  .main>.page3>.content {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5rem;
+  }
+
+
+  .main>.page4 {
+    flex-direction: column;
+  }
+
+  .main>.page4>.group1,
+  .main>.page4>.group2 {
+    display: none;
+  }
+
+  .main>.page4>img:nth-child(2) {
+    display: block;
+    height: 35rem;
+    width: 29rem;
+  }
+
+  .main>.page5>.container {
+    flex-direction: column;
+
+    >div {
+      margin-bottom: 3rem;
+      height: 30rem;
+      width: 40rem;
+      padding: 4rem;
+
+      img:nth-child(4) {
+        position: absolute;
+        left: 19rem;
+        top: 7rem;
+      }
+    }
+  }
+
+  .main>footer>div {
+    flex-direction: column;
+
+    .foot {
+      margin: 4rem 0;
+    }
+
+    .foot:nth-child(1) {
+      order: 3;
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width:500px) {
+  .main>.page1>.boxes>.box1 {
+    >img:nth-child(1) {
+      height: 10rem;
+      width: 35rem;
+      margin-bottom: 2rem;
+    }
+
+    >img:nth-child(2) {
+      height: 5rem;
+      width: 35rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
